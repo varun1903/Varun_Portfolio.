@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Education - Varun's Portfolio</title>
+
+  <!-- Google Fonts Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: rgb(244, 244, 248);
+      color: #12123e;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    header nav {
+      background-color: #004a7f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+
+    header .left {
+      color: white;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    header .right ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    header .right ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    header .right ul li a:hover {
+      color: #a6c8ff;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      padding: 60px 20px 100px;
+    }
+
+    .project-section {
+      width: 100%;
+      max-width: 1100px;
+      background-color: white;
+      padding: 40px 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .project-section h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #004a7f;
+      border-bottom: 3px solid #004a7f;
+      display: inline-block;
+      padding-bottom: 6px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      background-color: rgb(18, 18, 62);
+      color: #f0f0f0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      color: #a6c8ff;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn.github {
+      background-color: #333;
+      color: #fff;
+    }
+
+    .btn.github:hover {
+      background-color: #555;
+    }
+
+    .btn.live {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    .btn.live:hover {
+      background-color: #0056b3;
+    }
+
+    .container {
+      background-color: rgb(18, 18, 62);
+      color: #e5e7e8;
+      padding: 30px 40px;
+      border-radius: 10px;
+      width: 700px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .container h2 {
+      color: #004a7f;
+      font-weight: 700;
+      margin-bottom: 18px;
+      border-bottom: 3px solid #004a7f;
+      padding-bottom: 5px;
+    }
+
+    .ul {
+      list-style: none;
+      margin-left: 10px;
+      margin-bottom: 30px;
+    }
+
+    .ul li {
+      margin-bottom: 12px;
+      font-size: 16px;
+      color: #d0d4db;
+      line-height: 1.4;
+    }
+
+    .bold {
+      font-weight: 700;
+      color: #a6c8ff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        width: 90%;
+        padding: 20px;
+      }
+
+      header nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      header .right ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="left">varun's portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="skills.html">My Skills</a></li>
+          <li><a href="education.html">Education</a></li>
+            <li><a href="Project.html">Project</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="project-section">
+      <h2>My Projects</h2>
+      <div class="projects">
+
+        <div class="project-card">
+          <h3>PASSWORD-GENERATOR(USING REACT)</h3>
+          <p>This is a responsive password generator application built with React, JavaScript, HTML, and CSS. Users can generate strong and secure passwords with customizable options like length, uppercase/lowercase letters, numbers, and symbols. The interface is clean and interactive, offering instant password generation and copy functionality
+
+.</p>
+          <div class="project-links">
+            <a href="https://github.com/varun1903/Password_Generator" target="_blank" class="btn github">GitHub</a>
+            <a href="https://your-expense-tracker-live.com" target="_blank" class="btn live">Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Car Rental System</h3>
+          <p>his is a dynamic Car Rental Web Application developed using JSP, Servlet, Java, and MySQL. It allows users to book, cancel, and manage car rentals, while the admin can manage car listings and customer data. The application includes user authentication, booking history, and a responsive UI for smooth navigation.</p>
+          <div class="project-links">
+            <a href="https://github.com/varun1903/carrentalapp" target="_blank" class="btn github">GitHub</a>
+            <a href="https://your-car-rental-live.com" target="_blank" class="btn live">Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Shoes Shelling Page</h3>
+          <p>This is a modern shoe-selling website front page built using HTML, CSS, JavaScript, and Bootstrap. It features a clean layout with a bold hero section, product image, call-to-action buttons, and integrated brand links. The design is fully responsive and visually engaging to attract users.</p>
+          <div class="project-links">
+            <a href="https://github.com/varun1903/shoes_selling_page?tab=readme-ov-file" target="_blank" class="btn github">GitHub</a>
+            <a href="https://your-portfolio-live.com" target="_blank" class="btn live">Live Demo</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
